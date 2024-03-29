@@ -4,6 +4,12 @@ variable "name" {
   type        = string
 }
 
+variable "parent_team" {
+  description = "ID or slug of the parent team, if this is a nested team"
+  type        = string
+  default     = null
+}
+
 variable "description" {
   description = "Description for team"
   type        = string

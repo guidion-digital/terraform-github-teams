@@ -6,7 +6,7 @@ resource "github_team" "this" {
 }
 
 resource "github_team_members" "these" {
-  team_id = github_team.this.id
+  team_slug = github_team.this.slug
 
   dynamic "members" {
     for_each = var.members

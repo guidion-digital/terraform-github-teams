@@ -27,12 +27,6 @@ variable "privacy" {
   }
 }
 
-variable "create_default_maintainer" {
-  description = "value"
-  type        = bool
-  default     = true
-}
-
 variable "members" {
   description = "Map of name to username of normal members"
   type        = map(string)
